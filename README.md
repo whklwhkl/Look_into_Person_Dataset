@@ -1,6 +1,13 @@
 # Using LIP as Body Part Segmentation Dataset
 
+## prerequisites
+
+- openCV
+- PIL
+- tqdm
+
 ## setting up
+
 This repo contains code for dataset preparition, which converts the fine-grained LIP dataset into a coarse one to serve the purpose of part-based ReID.
 0. `git clone` and `cd` into the folder
 
