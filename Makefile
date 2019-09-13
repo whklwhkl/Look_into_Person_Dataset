@@ -1,8 +1,8 @@
 htl:
 	unzip -o TrainVal_parsing_annotations.zip
-	unzip TrainVal_parsing_annotations.zip
-	unzip -o TrainVal_parsing_images.zip
-	unzip TrainVal_parsing_images.zip
+	unzip -o TrainVal_parsing_annotations.zip
+	unzip -o TrainVal_images.zip
+	unzip TrainVal_images.zip
 	python head_torso_lower.py train_segmentations train_htl_seg
 	python head_torso_lower.py val_segmentations val_htl_seg
 	python to_grayscale.py train_htl_seg
