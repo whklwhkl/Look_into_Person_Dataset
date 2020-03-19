@@ -9,7 +9,7 @@ for s in ['train', 'val']:
 		i = t.strip()
 		imp = osp.join(s+'_images', i+'.jpg')
 		im = Image.open(imp)
-		sgp = osp.join(s+'_htl_seg', i+'.png')
+		sgp = osp.join(s+'_full_seg', i+'.png')
 		w, h = im.size
 		d = {'fpath_img':imp, 'fpath_segm':sgp, 'height':h, 'width':w}
 		print(json.dumps(d), file=f)
